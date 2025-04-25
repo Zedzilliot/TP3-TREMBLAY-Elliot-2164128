@@ -1,0 +1,26 @@
+*{box-sizing: border-box;}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-center *{
+    margin: 0 15px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: rgb(23, 23, 23);
+}
