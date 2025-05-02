@@ -6,6 +6,20 @@ header{
     background-color: brown;
 }
 
+footer{
+    border-top: dashed 1px black;
+}
+
+footer, footer div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1% 0 1%;
+}
+
+footer div p{
+    margin: 0 1% 0 1%;
+}
+
 .container{
     max-width: 1200px;
     width: 90%;
@@ -23,4 +37,22 @@ header{
     text-decoration: none;
     background-color: antiquewhite;
     color: rgb(23, 23, 23);
+}
+
+#grid-accueil{
+    display: flex;
+}
+
+#grid-accueil > *{
+    padding: 1%;
+}
+
+#grid-accueil div{
+    display: flex;
+    width: 25%;
+    background-color: red;
+}
+
+#grid-accueil img{
+    width: 75%;
 }
