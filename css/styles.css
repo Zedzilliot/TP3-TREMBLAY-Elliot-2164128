@@ -29,9 +29,10 @@ footer div p{
 .flex-center{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.flex-center *{
+.nav-header *{
     margin: 0 15px;
     padding: 10px;
     text-decoration: none;
@@ -43,11 +44,11 @@ footer div p{
     display: flex;
 }
 
-#grid-accueil > *{
+#grid-accueil img{
     padding: 1%;
 }
 
-#grid-accueil div{
+#grid-accueil > div{
     display: flex;
     width: 25%;
     background-color: red;
@@ -55,4 +56,24 @@ footer div p{
 
 #grid-accueil img{
     width: 75%;
+}
+
+#desc-accueil{
+    flex-direction: column;
+}
+
+#desc-accueil > p{
+    margin: 10 0;
+    font-size: 0.75rem;
+}
+
+#nav-accueil{
+    display: flex;
+}
+
+#nav-accueil div{
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+
 }
