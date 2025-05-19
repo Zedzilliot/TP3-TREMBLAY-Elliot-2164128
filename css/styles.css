@@ -1,35 +1,14 @@
 *{box-sizing: border-box;}
 
+/*----------------- Header -----------------*/
+
 header{
-    display: flex;
-    justify-content: space-around;
     background-color: brown;
 }
 
-footer{
-    border-top: dashed 1px black;
-}
-
-footer, footer div{
+header div{
     display: flex;
-    justify-content: space-between;
-    margin: 0 1% 0 1%;
-}
-
-footer div p{
-    margin: 0 1% 0 1%;
-}
-
-.container{
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .nav-header *{
@@ -39,6 +18,24 @@ footer div p{
     background-color: antiquewhite;
     color: rgb(23, 23, 23);
 }
+
+/*----------------- Footer -----------------*/
+
+footer{
+    border-top: dashed 1px black;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1% 0 1%;
+}
+
+footer div p{
+    margin: 0 1% 0 1%;
+}
+
+/*----------------- Page d'Accueil -----------------*/
 
 #grid-accueil{
     display: flex;
@@ -75,5 +72,23 @@ footer div p{
     display: flex;
     align-items: center;
     margin-right: 15%;
+    
+}
 
+/*----------------- Page de reservation -----------------*/
+
+
+
+/*----------------- Misc Classes -----------------*/
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
