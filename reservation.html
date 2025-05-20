@@ -24,11 +24,82 @@
 
     <main>
         <div class="container">
-            <h2>Réservation</h2>
+            <h2 id="h2-reservation">Réservation</h2>
 
-            <form id="frm-reservation">
-                <label for=""></label>
-                <input type="text" id="">
+            <form action="confirmation.html" id="frm-reservation">
+                <div class="flex-formulaire">
+                    <label for="txt-prenom">Prenom <span>*</span></label>
+                    <input type="text" id="txt-prenom" name="txt-prenom" required>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="txt-nom">Nom <span>*</span></label>
+                    <input type="text" id="txt-nom" name="txt-nom" required>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="tel-client">Numero de telephone <span>*</span></label>
+                    <input type="tel" id="tel-client" name="tel-client" required>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="nbr-clients">Nombre de personnes <span>*</span></label>
+                    <input type="number" id="nbr-clients" name="nbr-clients" min="1" value="1" required>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="date-reservation">Date de la reservation <span>*</span></label>
+                    <input type="date" id="date-reservation" name="date-reservation" required>
+                </div>
+
+                <div class="flex-formulaire">
+                    <p>Positionement de la table <span>*</span></p>
+                    <div>
+                        <input type="radio" id="rdo-salle" name="rdo-positionement" value="salle" required>
+                        <label for="rdo-salle">Salle a manger</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="rdo-terrace" name="rdo-positionement" value="terrace" required>
+                        <label for="rdo-terrace">Terrace</label>
+                    </div>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="sel-heure">Heure de reservation <span>*</span></label>
+                    <select name="sel-heure" id="sel-heure" required>
+                        <option value="12h00">12:00</option>
+                        <option value="12h30">12:30</option>
+                        <option value="13h00">13:00</option>
+                        <option value="13h30">13:30</option>
+                        <option value="17h00">17:00</option>
+                        <option value="17h30">17:30</option>
+                        <option value="18h00">18:00</option>
+                        <option value="18h30">18:30</option>
+                        <option value="19h00">19:00</option>
+                        <option value="19h30">19:30</option>
+                        <option value="20h00">20:00</option>
+                        <option value="20h30">20:30</option>
+                        <option value="21h00">21:00</option>
+                    </select>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="txt-commentaire">Instructions supplementaires</label>
+                    <textarea name="txt-commentaire" id="txt-commentaire"></textarea>
+                </div>
+
+                <div class="flex-formulaire">
+                    <label for="mail-client">Adresse courriel</label>
+                    <input type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com">
+                </div>
+
+                <div class="form-margin">
+                    <input type="checkbox" id="ckb-infolettre" name="ckb-infolettre">
+                    <label for="ckb-infolettre">Je veux m'inscrire a l'infolettre</label>
+                </div>
+
+                <input type="submit" value="Reserver" class="form-margin">
             </form>
         </div>
     </main>

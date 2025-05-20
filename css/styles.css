@@ -75,11 +75,52 @@ footer div p{
     
 }
 
+#grid-temoignage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 /*----------------- Page de reservation -----------------*/
 
+.flex-formulaire{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+}
 
+.flex-formulaire span{
+    color: red;
+}
 
-/*----------------- Misc Classes -----------------*/
+input, select, textarea{
+    max-width: 25%;
+}
+
+textarea{
+    height: 100px;
+}
+
+#h2-reservation{
+    font-size: 3rem;
+}
+
+.form-margin{
+    margin: 1% 0;
+}
+
+/*----------------- Page de confirmation -----------------*/
+
+#h2-confirmation{
+    font-size: 2rem;
+    margin-left: 15%;
+}
+
+#confirmation-main{
+    height: 86dvh;
+}
+
+/*----------------- Misc -----------------*/
 
 .container{
     max-width: 1200px;
