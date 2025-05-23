@@ -75,10 +75,32 @@ footer div p{
     
 }
 
+#temoignages-accueil h3{
+    color: rgb(87, 87, 87);
+}
+
 #grid-temoignage{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+#grid-temoignage img{
+    height: 15%;
+    width: 15%;
+    margin-right: 5%;
+}
+
+#grid-temoignage > div{
+    background-color:lightgray;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.flex-temoignage{
+    display: flex;
 }
 
 /*----------------- Page de reservation -----------------*/
@@ -121,6 +143,10 @@ textarea{
 }
 
 /*----------------- Misc -----------------*/
+
+h2{
+    font-size: 2rem;
+}
 
 .container{
     max-width: 1200px;
